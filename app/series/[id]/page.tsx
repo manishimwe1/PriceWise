@@ -32,6 +32,7 @@ const page = async ({
 				<div className='grid grid-cols-1 sm:grid-cols-4 lg:grid-cols-7 gap-3 justify-center items-center w-full px-4'>
 					{tvSeries.map((tvSerie) => (
 						<Link
+							key={tvSerie.id}
 							href={`/series/tv/${tvSerie.id}`}>
 							<div
 								key={tvSerie.id}
