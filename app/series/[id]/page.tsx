@@ -56,7 +56,9 @@ const page = async ({
 			</div>
 			<div className='flex gap-0 justify-between w-1/2 mx-auto text-white p-5 mb-20'>
 				{tvSeries.map((tv, i) => (
-					<div className='bg-[#1a1c29]/10 h-6 w-5 flex items-center justify-center'>
+					<div
+						key={tv.id}
+						className='bg-[#1a1c29]/10 h-6 w-5 flex items-center justify-center'>
 						<Link
 							href={`/series/${
 								tv.id
