@@ -1,5 +1,12 @@
 import { PriceHistoryItem, Product } from "@/types";
 
+import { type ClassValue, clsx } from "clsx";
+import { twMerge } from "tailwind-merge";
+
+export function cn(...inputs: ClassValue[]) {
+	return twMerge(clsx(inputs));
+}
+
 const Notification = {
 	WELCOME: "WELCOME",
 	CHANGE_OF_STOCK: "CHANGE_OF_STOCK",
